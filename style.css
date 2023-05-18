@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family:'Poppins', sans-serif;;
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 65%;
+
+    
+}
+
+::placeholder{
+    font-weight: 600; 
+}
+
+input{
+    padding: 3.3% 7%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border:1px solid hsl(252, 33%, 91%) ;
+    width: 100%;
+    outline-color:hsl(248, 32%, 49%);
+  
+}
+
+.first, .last, .email, .password{
+    position:relative
+
+}
+
+.color{
+    color: hsl(0, 100%, 74%);
+}
+
+
+.firstError{
+    position: absolute;
+    top:21px;
+    left:340px;
+    width:18px;
+    display: none;
+
+}
+
+.lastError{
+    position: absolute;
+    top:21px;
+    left:340px;
+    width:18px;
+    display: none;
+
+}
+
+.emailError{
+    position: absolute;
+    top:21px;
+    left:340px;
+    width:18px;
+    display: none;
+
+}
+
+.passwordError{
+    position: absolute;
+    top:21px;
+    left:340px;
+    width:18px;
+    display: none;
+
+}
+
+form{
+    background-color: white;
+    padding: 7%;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
+}
+
+.article {
+    font-size: 0.8em;
+    width: 100%;
+    color: white;
+}
+.try button{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 4%;
+    width: 100%;
+    color:white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78em;
+    box-shadow:rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   
+}
+
+form button{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 3%;
+    width: 100%;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    border-bottom:4px solid hsl(154, 59%, 45%) ;
+    cursor: pointer;
+
+}
+
+form button:hover{
+    opacity: 0.7;
+
+}
+
+.try span{
+    font-weight: 400;
+    color:hsl(246, 25%, 77%)
+}
+
+.by {
+    font-size: 0.6em;
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.by span{
+    color:hsl(0, 100%, 74%) ;
+
+}
+
+h1{ 
+    margin-top: 155px;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 44px;
+    margin-bottom: 26px;
+}
+.article p{
+    font-weight: 400;
+    width: 88%;
+}
+
+
+
+.firstEmpty{
+    color:hsl(0, 100%, 74%);
+    font-size: 0.60em;
+    text-align: end;
+    font-weight: 500;
+    font-style: italic;
+    display: none;
+
+}
+.lastEmpty{
+    color:hsl(0, 100%, 74%);
+    font-size: 0.60em;
+    text-align: end;
+    font-weight: 500;
+    font-style: italic;
+    display: none;
+
+}
+.emailEmpty{
+    color:hsl(0, 100%, 74%);
+    font-size: 0.60em;
+    text-align: end;
+    font-weight: 500;
+    font-style: italic;
+    display: none;
+
+}
+.passwordEmpty{
+    color:hsl(0, 100%, 74%);
+    font-size: 0.60em;
+    text-align: end;
+    font-weight: 500;
+    font-style: italic;
+    display: none;
+
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width:375px) {
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .container{
+        grid-template-columns: 1fr;
+        width: 300px;
+
+    }
+
+    h1{
+        margin-top: 80px;
+        font-size: 2em;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .article p{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+
+    .firstError{
+        position: absolute;
+        top:17px;
+        left:225px;
+        width:18px;
+        display: none;
+    
+    }
+    
+    .lastError{
+        position: absolute;
+        top:17px;
+        left:225px;
+        width:18px;
+        display: none;
+    
+    }
+    
+    .emailError{
+        position: absolute;
+        top:17px;
+        left:225px;
+        width:18px;
+        display: none;
+    
+    }
+    
+    .passwordError{
+        position: absolute;
+        top:17px;
+        left:225px;
+        width:18px;
+        display: none;
+    
+    }
+
+    .try button{
+        padding: 5% 9%;
+        font-size: 0.8em;
+    }
+    
+}
+
